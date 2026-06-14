@@ -8,6 +8,7 @@ namespace CrazeVerse.Modes
         public TrainingOptionData[] Options { get; private set; }
         public TrainingOptionData SelectedOption { get; private set; }
         public string StatusMessage { get; private set; }
+        public CrazeVerse.Training.TrainingGroundSetupController SetupController;
 
         public void Init()
         {
@@ -40,15 +41,27 @@ namespace CrazeVerse.Modes
         public void EnterTrainingPreview()
         {
             EnsureReady();
+
+            if (SetupController != null)
+            {
+                SetupController.StartTrainingPreview();
+            }
+
             StatusMessage = SelectedOption != null
-                ? "Preview only: " + SelectedOption.optionName + ". Player controller skeleton will be wired later."
-                : "Preview only. Player controller skeleton will be wired later.";
-            // TODO: Connect player controller skeleton, scene entry, and real training flow in later approved steps.
+                ? "Preview only: " + SelectedOption.optionName + ". Training setup skeleton is connected."
+                : "Preview only. Training setup skeleton is connected.";
+            // TODO: Real scene entry and player setup will be added only in a later approved step.
         }
 
         public void RefreshTrainingGround()
         {
             EnsureReady();
+
+            if (SetupController != null)
+            {
+                SetupController.RefreshTrainingSetup();
+            }
+
             // TODO: Bind local training options to UI cards when Unity Canvas is created later.
         }
 
