@@ -8,6 +8,16 @@ Android-first Unity 3D URP mobile game planning repo for a premium Indian-inspir
 - Step 1: Canva Deck 1 to Deck 5 completed as visual direction.
 - Step 2: Figma file created, full handoff pending due tool limit.
 - Step 3: GitHub planning files added.
+- Step 4: Unity project structure added with fallback folders where GitHub blocked exact paths.
+- Step 5: Core managers, local service interfaces, mock services, and data models added.
+- Step 6: UI navigation shell added.
+- Step 7: Local profile and save wiring added.
+- Step 8: Home Lobby and main page UI skeleton added.
+- Step 9: Local mode selection and Training Ground entry skeleton added.
+- Step 10: Player controller skeleton added.
+- Step 11: Weapon, health, and inventory skeleton added.
+- Step 12: Training Ground setup skeleton added.
+- Step 13: Unity Editor compile-check and local scene setup planning docs added. Actual Unity Editor test is still pending on the local computer.
 
 ## Game Modes
 
@@ -27,4 +37,4 @@ The prototype must use guest login, local profile, local save, coins, XP, rank, 
 
 ## Next Step
 
-Step 4 will create the Unity project structure only after approval.
+Step 14 can be the first local Unity scene skeleton plan or a compile-fix pass after Unity Console results are checked locally.
