@@ -1,7 +1,7 @@
 namespace CrazeVerse.Training
 {
     [System.Serializable]
-    public class TrainingDisplayData
+    public class TrainingHUDData
     {
         public string title;
         public string subtitle;
@@ -10,9 +10,9 @@ namespace CrazeVerse.Training
         public bool showControlsHint;
         public bool showExitButton;
 
-        public static TrainingDisplayData CreateDefault()
+        public static TrainingHUDData CreateDefault()
         {
-            return new TrainingDisplayData
+            return new TrainingHUDData
             {
                 title = "Training Ground",
                 subtitle = "Local practice setup",
