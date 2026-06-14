@@ -41,9 +41,9 @@ namespace CrazeVerse.Modes
         {
             EnsureReady();
             StatusMessage = SelectedOption != null
-                ? "Preview only: " + SelectedOption.optionName
-                : "Preview only";
-            // TODO: Connect to real training scene entry in a later approved step.
+                ? "Preview only: " + SelectedOption.optionName + ". Player controller skeleton will be wired later."
+                : "Preview only. Player controller skeleton will be wired later.";
+            // TODO: Connect player controller skeleton, scene entry, and real training flow in later approved steps.
         }
 
         public void RefreshTrainingGround()
