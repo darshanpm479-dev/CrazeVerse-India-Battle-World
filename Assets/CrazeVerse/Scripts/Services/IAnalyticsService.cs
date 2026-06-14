@@ -3,6 +3,6 @@ namespace CrazeVerse.Services
 {
     public interface IAnalyticsService
     {
-        void LogEvent(string eventName);
+        void RecordEvent(string eventName);
     }
 }
