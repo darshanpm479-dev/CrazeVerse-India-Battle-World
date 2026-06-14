@@ -9,19 +9,25 @@ namespace CrazeVerse.UI
         public UILoadingOverlay LoadingOverlay;
         public UIModalDialog ModalDialog;
         public UIScreenRouter Router;
+        public HomeLobbyController HomeLobbyController;
 
         public void Init()
         {
-            // TODO: Wire these references from Unity scene or prefab in a later step.
             if (Router != null)
             {
                 Router.Init();
+            }
+
+            if (HomeLobbyController != null)
+            {
+                HomeLobbyController.Init();
             }
         }
 
         public void OpenHome()
         {
             Router?.NavigateTo(ScreenId.HomeLobby);
+            HomeLobbyController?.RefreshHome();
         }
 
         public void OpenModes()
