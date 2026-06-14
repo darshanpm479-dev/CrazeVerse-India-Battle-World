@@ -2,6 +2,13 @@ namespace CrazeVerse.Combat
 {
     public enum InventoryItemType
     {
-        None
+        None,
+        Weapon,
+        Ammo,
+        Consumable,
+        QuestItem,
+        SacredItem,
+        Tool,
+        Cosmetic
     }
 }
