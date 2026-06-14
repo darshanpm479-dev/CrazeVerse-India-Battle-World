@@ -1,0 +1,1 @@
+OpenAI planning folder placeholder. No API key is required in the local prototype phase.
