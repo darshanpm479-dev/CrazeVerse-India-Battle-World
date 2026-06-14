@@ -19,6 +19,8 @@ namespace CrazeVerse.Player
                 InputReader.Init();
             }
 
+            // TODO: Step 11 adds data-only controller skeletons for item use, health preview, and local inventory.
+            // TODO: Later approved gameplay steps can wire those controllers here without adding real shooting now.
             IsReady = true;
         }
 
