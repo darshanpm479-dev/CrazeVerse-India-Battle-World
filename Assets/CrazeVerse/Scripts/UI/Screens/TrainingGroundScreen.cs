@@ -5,6 +5,7 @@ namespace CrazeVerse.UI
     public class TrainingGroundScreen : UIPageBase
     {
         public TrainingGroundEntryController Controller;
+        public CrazeVerse.Training.TrainingGroundSetupController TrainingSetup;
 
         private void Awake()
         {
@@ -19,8 +20,13 @@ namespace CrazeVerse.UI
             {
                 Controller.RefreshTrainingGround();
             }
+
+            if (TrainingSetup != null)
+            {
+                TrainingSetup.RefreshTrainingSetup();
+            }
         }
 
-        // TODO: Connect training menu UI when Unity Canvas is created later.
+        // TODO: Connect training page UI when Unity Canvas is created later.
     }
 }
