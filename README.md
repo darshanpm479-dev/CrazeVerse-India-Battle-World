@@ -17,7 +17,8 @@ Android-first Unity 3D URP mobile game planning repo for a premium Indian-inspir
 - Step 10: Player controller skeleton added.
 - Step 11: Weapon, health, and inventory skeleton added.
 - Step 12: Training Ground setup skeleton added.
-- Step 13: Unity Editor compile-check and local scene setup planning docs added. Actual Unity Editor test is still pending on the local computer.
+- Step 13: Unity Editor compile-check and local scene setup planning docs added.
+- Step 13 local compile fix: Unity 6.3 LTS local check passed after `MapOptionData.cs` fix. Console result reported by user: 0 errors.
 
 ## Game Modes
 
@@ -37,4 +38,4 @@ The prototype must use guest login, local profile, local save, coins, XP, rank, 
 
 ## Next Step
 
-Step 14 can be the first local Unity scene skeleton plan or a compile-fix pass after Unity Console results are checked locally.
+Step 14 can be the first local Unity scene skeleton plan after the GitHub compile fix is committed.
